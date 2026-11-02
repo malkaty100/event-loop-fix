@@ -1,7 +1,11 @@
 // ex3.js
+// function help(i){
+// console.log(i);
+
+// }
 function run() {
   for (var i = 0; i < 3; i++) {
-    setTimeout(() => console.log(i), 0);
+setTimeout(((num) => () => console.log(num))(i), 0);    // help(i)
   }
 }
 
